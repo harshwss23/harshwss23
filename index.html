@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUV</title>
+    <style>
+        .btn {
+            display: flex;
+            margin: 48vh 0;
+            justify-content: center;
+        }
+        
+        .button {
+            background-color: orange;
+            height: 30px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 6px;
+        }
+    </style>
+
+</head>
+
+<body id="body">
+    <div class="btn">
+        <button class="button" id="btn">Click Here</button>
+    </div>
+    <script>
+        let button = document.getElementById('btn');
+        let body = document.getElementById('body');
+        let color = ['red', 'blue', 'pink', 'orange', 'purple']
+        let i = 0;
+        button.addEventListener('click', function change() {
+            body.style.backgroundColor = color[i]
+            i++;
+        })
+    </script>
+</body>
+
+</html>
